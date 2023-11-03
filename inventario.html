@@ -85,8 +85,12 @@
         <!--fin search section-->
         <!--calendario inicio-->
         <div class="select--content">
-            <h2>HISTORIAL DE INVENTARIO</h2>
-            <input type="date" value="2023-11-23" min="2023-11-01" max="2023-11-30">
+            <div class="title--content">
+                <h2 class="titulo--inventario">HISTORIAL DE INVENTARIO</h2>
+            </div>
+            <div class="input--content">
+                <input type="date" value="2023-11-23" min="2023-11-01" max="2023-11-30">
+            </div>
             <div class="content--select1">
                 <select name="Productos" id="">
                     <option selected disabled>Todos los productos</option>
@@ -98,31 +102,35 @@
                     <option value="6">Punta de anca</option>
                     <option value="7">Cañon de cerdo</option>
                 </select>
+                
             </div>
-            <div class="content--select2">
-                <select name="Cortesia" id="">
-                    <option selected disabled>-- Tipo de Movimiento --</option>
-                    <option value="1">Facturación</option>
-                    <option value="2">Anulación</option>
-                    <option value="3">Consumo interno</option>
-                    <option value="4">Cortesia</option>
-                    <option value="5">Entrada - Compra</option>
-                    <option value="6">Entrada - Devolución</option>
-                    <option value="8">Entrada - Ajuste</option>
-                    <option value="9">Entrada - Otro</option>
-                    <option value="10">Salida - Devolución</option>
-                    <option value="11">Salida - Ajuste</option>
-                    <option value="12">Salida - Otro</option>
-                    <option value="13">Producción</option>
-                    <option value="14">Inventario a cero</option>
-                    <option value="15">Traslados</option>
-                    <option value="16">Eliminación - Entrada Compra</option>
-                    <option value="17">Eliminación - Entrada Devolución</option>
-                    <option value="18">Eliminación - Entrada Ajuste</option>
-                    <option value="19">Eliminación - Entrada Otro</option>
-                </select>
-            </div>
-            <button>Buscar</button>
+                <div class="content--select2">
+                    <select name="Cortesia" id="">
+                        <option selected disabled>-- Tipo de Movimiento --</option>
+                        <option value="1">Facturación</option>
+                        <option value="2">Anulación</option>
+                        <option value="3">Consumo interno</option>
+                        <option value="4">Cortesia</option>
+                        <option value="5">Entrada - Compra</option>
+                        <option value="6">Entrada - Devolución</option>
+                        <option value="8">Entrada - Ajuste</option>
+                        <option value="9">Entrada - Otro</option>
+                        <option value="10">Salida - Devolución</option>
+                        <option value="11">Salida - Ajuste</option>
+                        <option value="12">Salida - Otro</option>
+                        <option value="13">Producción</option>
+                        <option value="14">Inventario a cero</option>
+                        <option value="15">Traslados</option>
+                        <option value="16">Eliminación - Entrada Compra</option>
+                        <option value="17">Eliminación - Entrada Devolución</option>
+                        <option value="18">Eliminación - Entrada Ajuste</option>
+                        <option value="19">Eliminación - Entrada Otro</option>
+                    </select>
+
+                </div>
+                <div class="button--select">
+                    <button>Buscar</button>
+                </div>
         </div>
         <!--fin calendario-->
 
@@ -212,14 +220,13 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="7">Total Movimiento: 5</td>
+                            <td colspan="7">Total Movimiento: 6</td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
         </div>
-    </div>
-    <!--TABLA fin-->
+        <!--TABLA fin-->
 
 
 

@@ -1,7 +1,7 @@
 /****menu Dashboard******/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
@@ -9,10 +9,12 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
     display: flex;
 }
-.sidebar{
+
+.sidebar {
     position: sticky;
     top: 0;
     left: 0;
@@ -25,31 +27,38 @@ body{
     transition: all 0.5s linear;
     background: rgba(113, 99, 186, 255);
 }
-.sidebar:hover{
+
+.sidebar:hover {
     width: 240px;
     transition: 0.5s;
 }
-.logo{
+
+.logo {
     height: 80px;
     padding: 16px;
 }
-.menu{
+
+.menu {
     height: 88%;
     position: relative;
     list-style: none;
     padding: 0;
 }
-.menu li{
+
+.menu li {
     padding: 1rem;
     margin: 8px 0;
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
 }
-.menu li:hover,.active{
+
+.menu li:hover,
+.active {
     background: #e0e0e058;
-    
+
 }
-.menu a{
+
+.menu a {
     color: #ffffff;
     font-size: 14px;
     text-decoration: none;
@@ -57,35 +66,40 @@ body{
     align-items: center;
     gap: 1.5rem;
 }
-.menu a span{
+
+.menu a span {
     overflow: hidden;
 }
+
 .menu a i {
     font-size: 1.2rem;
 }
-.logout{
+
+.logout {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 }
+
 /*fin Css Menu Dashboard*/
 
 /********Body seccion****************/
-.main--content{
-position: relative;
-background: #ebe9e9;
-width: 100%;
-padding: 1rem;
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
 }
 
-.header--wrapper img{
+.header--wrapper img {
     width: 50px;
     height: 55px;
     cursor: pointer;
     border-radius: 50%;
 }
-.header--wrapper{
+
+.header--wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,15 +109,18 @@ padding: 1rem;
     padding: 10px 2rem;
     margin-bottom: 1rem;
 }
-.header--title{
+
+.header--title {
     color: rgba(113, 99, 186, 255);
 }
-.user--info{
+
+.user--info {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.search--box{
+
+.search--box {
     background: rgb(237, 237, 237);
     border-radius: 15px;
     color: rgba(113, 99, 186, 255);
@@ -112,37 +129,44 @@ padding: 1rem;
     gap: 5px;
     padding: 4px 12px;
 }
-.search--box input{
+
+.search--box input {
     background: transparent;
     padding: 10px;
 }
-.search--box i{
+
+.search--box i {
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
-.search--box i:hover{
+
+.search--box i:hover {
     transform: scale(1.2);
 }
+
 /*fin boby seccion*/
 
 /*********contenedor Tarjetas************/
-.card-container{
+.card-container {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
 }
-.card--wrapper{
+
+.card--wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
-.main--title{
+
+.main--title {
     color: rgba(113, 99, 186, 255);
     padding-bottom: 10px;
     font-size: 15px;
 }
-.payment--card{
+
+.payment--card {
     background: rgb(229, 223, 223);
     border-radius: 10px;
     padding: 1.2rem;
@@ -153,29 +177,35 @@ padding: 1rem;
     justify-content: space-between;
     transition: all 0.5s ease-in-out;
 }
-.payment--card:hover{
-transform: translate(-5px);
+
+.payment--card:hover {
+    transform: translate(-5px);
 }
-.car--header{
+
+.car--header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
-.amount{
+
+.amount {
     display: flex;
     flex-direction: column;
 }
-.title{
+
+.title {
     font-size: 12px;
     font-weight: 200;
 }
-.amount--value{
+
+.amount--value {
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
 }
-.icon{
+
+.icon {
     color: #fff;
     padding: 1rem;
     height: 60px;
@@ -185,123 +215,176 @@ transform: translate(-5px);
     font-size: 1.5rem;
     background: red;
 }
-.card-detail{
+
+.card-detail {
     font-size: 18px;
     color: #777777;
     letter-spacing: 2px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 /*fin contenedor targetas*/
 
 /************color CSS*****************/
-.light-red{
+.light-red {
     background: rgb(251, 233, 233);
 }
-.light-purple{
+
+.light-purple {
     background: rgb(254, 226, 254);
 }
-.light-green{
+
+.light-green {
     background: rgb(235, 254, 235);
 }
-.light-blue{
+
+.light-blue {
     background: rgb(236, 236, 254);
 }
-.dark-red{
+
+.dark-red {
     background: red;
 }
-.dark-purple{
+
+.dark-purple {
     background: purple;
 }
-.dark-green{
+
+.dark-green {
     background: green;
 }
-.dark-blue{
+
+.dark-blue {
     background: blue;
 }
+
 /*fin color CSS*/
 
 /***********inicio Tabla******************/
 
-.tabular--wrapper{
+.tabular--wrapper {
     background: #fff;
     margin-top: 1rem;
     border-radius: 10px;
     padding: 2rem;
 }
-.table-container{
+
+.table-container {
     width: 100%;
 }
-table{
+
+table {
     width: 100%;
     border-collapse: collapse;
 }
-thead{
+
+thead {
     background: rgba(113, 99, 186, 255);
     color: #fff;
 }
-th{
+
+th {
     padding: 15px;
     text-align: left;
 }
-tbody{
+
+tbody {
     background: #f2f2f2;
 }
-td{
+
+td {
     padding: 15px;
     font-size: 14px;
     color: #333;
 }
-tr:nth-child(even){
+
+tr:nth-child(even) {
     background: #fff;
 }
-tfoot{
+
+tfoot {
     background: rgba(113, 99, 186, 255);
     font-weight: bold;
     color: #fff;
 }
+
 tfoot td {
     padding: 15px;
     color: #fff;
 }
-.table-container button{
+
+.table-container button {
     color: green;
     background: none;
     cursor: pointer;
 }
+
 /*******FIN TABLA************/
 
 /*********INICIO CALENDARIO*********/
-.select--content{
+
+
+.select--content {
     background: #fff;
     margin-top: 1rem;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 3rem;
+
+
 }
 
-input[type="date"]{
+.content--select1,.content--select2 {
+
+    display: inline-block;
+    width: 400px;
+    /* Ajusta el ancho según tus necesidades */
+    margin-right: 100px;
+    /* Espacio entre los selects */
+    
+    justify-content: space-between;
     background-color: rgba(113, 99, 186, 255);
-    padding: 15px;
-    position: absolute;
-    transform: translate(-50%,-50%); 
-    top: 20%;
-    left: 50%; 
-    font-family:"Roboto Mono"monospace;
+
+
+}
+.title--content{
+    
+    height: 100px;
+    left: 400px;
+    position: relative; /* Importante para establecer un contexto de apilamiento */
+    z-index: 1; /* Z-index determina la elevación */
+}
+.titulo--inventario{
+    color:rgb(240, 8, 93);
+}
+input[type="date"] {
+    background-color: rgba(113, 99, 186, 255);
+    padding: 5px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-family: "Roboto Mono" monospace;
     color: #ffffff;
     font-size: 10px;
-    border: none;
+    border: 5px;
     outline: none;
     border-radius: 5px;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 130px; /* Ajusta la posición superior según sea necesario */
+    
+    z-index: 2; /* Z-index mayor que el div1 para superponerlo */
 }
 
 
 
 /**INICIO TABLA INVENTARIO***************/
-.table-wrapper{
+.table-wrapper {
     background: #fff;
     margin-top: 1rem;
     border-radius: 10px;
     padding: 1rem;
 }
-.table--content{
+
+.table--content {
     width: 100%;
 }
