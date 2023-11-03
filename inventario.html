@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventary</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<body>
+    <!-- inicio menu Dashboard -->
+    <div class="sidebar">
+        <div class="logo"></div>
+        <div class="menu">
+
+            <li class="active">
+                <a href="dash.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Statistics</span>
+                </a>
+            </li>
+            <li>
+                <a href="inventario.html">
+                    <i class="fas fa-inbox"></i>
+                    <span>Inventary</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-bicycle"></i>
+                    <span>Deliverys</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </div>
+    </div>
+    </div>
+    <!-- fin menu Dashboard -->
+    <!--Search section -->
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>New Order</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="search" />
+                </div>
+                <img src="imagenes/edward rep.jpg" alt="">
+            </div>
+        </div>
+        <!--fin search section-->
+        <!--calendario inicio-->
+        <div class="select--content">
+            <h2>HISTORIAL DE INVENTARIO</h2>
+            <input type="date" value="2023-11-23" min="2023-11-01" max="2023-11-30">
+            <div class="content--select1">
+                <select name="Productos" id="">
+                    <option selected disabled>Todos los productos</option>
+                    <option value="1">Bandeja Paisa</option>
+                    <option value="2">Churrasco</option>
+                    <option value="3">Filete de Pechuga</option>
+                    <option value="4">Ajiaco</option>
+                    <option value="5">Salchipapa</option>
+                    <option value="6">Punta de anca</option>
+                    <option value="7">Cañon de cerdo</option>
+                </select>
+            </div>
+            <div class="content--select2">
+                <select name="Cortesia" id="">
+                    <option selected disabled>-- Tipo de Movimiento --</option>
+                    <option value="1">Facturación</option>
+                    <option value="2">Anulación</option>
+                    <option value="3">Consumo interno</option>
+                    <option value="4">Cortesia</option>
+                    <option value="5">Entrada - Compra</option>
+                    <option value="6">Entrada - Devolución</option>
+                    <option value="8">Entrada - Ajuste</option>
+                    <option value="9">Entrada - Otro</option>
+                    <option value="10">Salida - Devolución</option>
+                    <option value="11">Salida - Ajuste</option>
+                    <option value="12">Salida - Otro</option>
+                    <option value="13">Producción</option>
+                    <option value="14">Inventario a cero</option>
+                    <option value="15">Traslados</option>
+                    <option value="16">Eliminación - Entrada Compra</option>
+                    <option value="17">Eliminación - Entrada Devolución</option>
+                    <option value="18">Eliminación - Entrada Ajuste</option>
+                    <option value="19">Eliminación - Entrada Otro</option>
+                </select>
+            </div>
+            <button>Buscar</button>
+        </div>
+        <!--fin calendario-->
+
+        <!--tabla inicio-->
+        <div class="table-wrapper">
+
+            <div class="table--content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha de Movimiento</th>
+                            <th>Insumo</th>
+                            <th>Producto Base</th>
+                            <th>Tipo de Movimiento</th>
+                            <th>Stock Inicial</th>
+                            <th>Cantidad Usada</th>
+                            <th>Stock Final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                2023-10-21
+                            </td>
+                            <td>Salsa Bechamel</td>
+                            <td>Espaguetti Carbonara</td>
+                            <td>Salida</td>
+                            <td>50</td>
+                            <td>20</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-21
+                            </td>
+                            <td>Carne x porción</td>
+                            <td>Punta de Anca</td>
+                            <td>Entrada</td>
+                            <td>-1</td>
+                            <td>33</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-20
+                            </td>
+                            <td>Pollo x porción</td>
+                            <td>Filete de Pechuga</td>
+                            <td>Salida</td>
+                            <td>10</td>
+                            <td>8</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-19
+                            </td>
+                            <td>Pack Salchichas</td>
+                            <td>Salchipapa</td>
+                            <td>Cortesia</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-19
+                            </td>
+                            <td>Carne x porción</td>
+                            <td>Cañon de cerdo</td>
+                            <td>Entrada</td>
+                            <td>13</td>
+                            <td>5</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-19
+                            </td>
+                            <td>Pack Chorizos</td>
+                            <td>Bandeja Paisa</td>
+                            <td>Salida</td>
+                            <td>-5</td>
+                            <td>30</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7">Total Movimiento: 5</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--TABLA fin-->
+
+
+
+</body>
+
+</html>
