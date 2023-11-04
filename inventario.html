@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventary</title>
 </head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./css/calendario.css">
+<link rel="stylesheet" href="./css/Style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <body>
@@ -92,7 +93,7 @@
                 <input type="date" value="2023-11-23" min="2023-11-01" max="2023-11-30">
             </div>
             <div class="content--select1">
-                <select name="Productos" id="">
+                <select name="Productos" id="select-1">
                     <option selected disabled>Todos los productos</option>
                     <option value="1">Bandeja Paisa</option>
                     <option value="2">Churrasco</option>
@@ -102,35 +103,35 @@
                     <option value="6">Punta de anca</option>
                     <option value="7">Cañon de cerdo</option>
                 </select>
-                
-            </div>
-                <div class="content--select2">
-                    <select name="Cortesia" id="">
-                        <option selected disabled>-- Tipo de Movimiento --</option>
-                        <option value="1">Facturación</option>
-                        <option value="2">Anulación</option>
-                        <option value="3">Consumo interno</option>
-                        <option value="4">Cortesia</option>
-                        <option value="5">Entrada - Compra</option>
-                        <option value="6">Entrada - Devolución</option>
-                        <option value="8">Entrada - Ajuste</option>
-                        <option value="9">Entrada - Otro</option>
-                        <option value="10">Salida - Devolución</option>
-                        <option value="11">Salida - Ajuste</option>
-                        <option value="12">Salida - Otro</option>
-                        <option value="13">Producción</option>
-                        <option value="14">Inventario a cero</option>
-                        <option value="15">Traslados</option>
-                        <option value="16">Eliminación - Entrada Compra</option>
-                        <option value="17">Eliminación - Entrada Devolución</option>
-                        <option value="18">Eliminación - Entrada Ajuste</option>
-                        <option value="19">Eliminación - Entrada Otro</option>
-                    </select>
 
-                </div>
-                <div class="button--select">
-                    <button>Buscar</button>
-                </div>
+            </div>
+            <div class="content--select2">
+                <select name="Cortesia" id="select-2">
+                    <option selected disabled>-- Tipo de Movimiento --</option>
+                    <option value="1">Facturación</option>
+                    <option value="2">Anulación</option>
+                    <option value="3">Consumo interno</option>
+                    <option value="4">Cortesia</option>
+                    <option value="5">Entrada - Compra</option>
+                    <option value="6">Entrada - Devolución</option>
+                    <option value="8">Entrada - Ajuste</option>
+                    <option value="9">Entrada - Otro</option>
+                    <option value="10">Salida - Devolución</option>
+                    <option value="11">Salida - Ajuste</option>
+                    <option value="12">Salida - Otro</option>
+                    <option value="13">Producción</option>
+                    <option value="14">Inventario a cero</option>
+                    <option value="15">Traslados</option>
+                    <option value="16">Eliminación - Entrada Compra</option>
+                    <option value="17">Eliminación - Entrada Devolución</option>
+                    <option value="18">Eliminación - Entrada Ajuste</option>
+                    <option value="19">Eliminación - Entrada Otro</option>
+                </select>
+
+            </div>
+            <div class="button--select-content">
+                <button class="button--select">Buscar</button>
+            </div>
         </div>
         <!--fin calendario-->
 
@@ -226,6 +227,8 @@
                 </table>
             </div>
         </div>
+        <i class="fa-solid fa-print"></i>
+        <i class="fa-solid fa-file-excel"></i>
         <!--TABLA fin-->
 
 
