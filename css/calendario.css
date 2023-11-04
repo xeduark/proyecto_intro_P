@@ -19,22 +19,40 @@
     background-color: rgb(240, 8, 93);
     padding: 10px;
     border-radius: 10px;
+    color: #fff;
+}
+.button--select-content{
+    position: relative;
+    left: 600px;
+    top: 20px;
+}
+.button--select:hover{
+    cursor: pointer;
 }
 .content--select1,.content--select2 {
-    display: inline-block;
+    display: inline;
     margin-right: 100px;
     /* Espacio entre los selects */
     justify-content: space-between;
+    position: relative;
+    left: 400px;
+    bottom: 20px;
 }
 #select-1,#select-2{
     background-color: rgba(113, 99, 186, 255);
     padding: 10px;
     border-radius: 5px;
-    color: #fff;
+    color: #fff;  
 }
-#select-1,#select-2:hover{
+
+#select-1:hover{
+    background-color: rgb(240, 8, 93);
+    cursor: pointer;
     
-    background: rgb(240, 8, 93);
+}
+#select-2:hover{
+    background-color: rgb(240, 8, 93);
+    cursor: pointer;
 }
 .title--content{
     
@@ -76,9 +94,4 @@ input[type="date"] {
 
 .table--content {
     width: 100%;
-}
-.button--select-content{
-    position: relative;
-    left: 600px;
-    top: 20px;
 }
