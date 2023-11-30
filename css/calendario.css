@@ -23,7 +23,7 @@
 }
 .button--select-content{
     position: relative;
-    left: 600px;
+    left: 500px;
     top: 20px;
 }
 .button--select:hover{
@@ -35,7 +35,7 @@
     /* Espacio entre los selects */
     justify-content: space-between;
     position: relative;
-    left: 400px;
+    left: 300px;
     bottom: 20px;
 }
 #select-1,#select-2{
@@ -57,7 +57,7 @@
 .title--content{
     
     height: 100px;
-    left: 500px;
+    left: 400px;
     position: relative; /* Importante para establecer un contexto de apilamiento */
     z-index: 1; /* Z-index determina la elevación */
 }

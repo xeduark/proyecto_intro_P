@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="./css/calendario.css">
 <link rel="stylesheet" href="./css/Style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<script src="https://kit.fontawesome.com/162e2e5f40.js"></script>
 
 <body>
     <!-- inicio menu Dashboard -->
@@ -80,10 +81,23 @@
                     <i class="fa-solid fa-search"></i>
                     <input type="text" placeholder="search" />
                 </div>
-                <img src="imagenes/edward rep.jpg" alt="">
+                <img id="myImg" src="imagenes/edward rep.jpg" alt="" onclick="openModal()">
             </div>
         </div>
         <!--fin search section-->
+        <!-- El modal -->
+        <div id="myModal">
+            <div id="modal-content">
+                <span id="closeModal" onclick="closeModal()">&times;</span>
+                <!-- Contenido del modal -->
+                <i class="fa-regular fa-user"></i>
+                <a id="Emodal" href="#">Mi Perfil</a>
+                <i class="fa-solid fa-headset"></i>
+                <a id="Emodal" href="#">Ayuda</a>
+                <i class="fa-solid fa-power-off"></i>
+                <a id="Emodal" href="/login.html">Cerrar Sesión</a>
+            </div>
+        </div>
         <!--calendario inicio-->
         <div class="select--content">
             <div class="title--content">
@@ -130,11 +144,18 @@
 
             </div>
             <div class="button--select-content">
-                <button class="button--select">Buscar</button>
+                <button class="button--select" onclick="openModal2()">Buscar</button>
             </div>
         </div>
         <!--fin calendario-->
-
+<!-- El modal -->
+<div id="myModal2">
+    <div id="modal-content2">
+      <span id="closeModal2" onclick="closeModal2()">&times;</span>
+      <!-- Contenido del modal -->
+      <p>Aquí puedes agregar el contenido que desees mostrar en el modal.</p>
+    </div>
+  </div>
         <!--tabla inicio-->
         <div class="table-wrapper">
 
@@ -231,7 +252,45 @@
         <i class="fa-solid fa-file-excel"></i>
         <!--TABLA fin-->
 
+        <script>
+            // Función para abrir el modal
+            function openModal() {
+                document.getElementById('myModal').style.display = 'block';
+            }
 
+            // Función para cerrar el modal
+            function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+            }
+
+            // Cierra el modal si el usuario hace clic fuera de él
+            window.onclick = function (event) {
+                var modal = document.getElementById('myModal');
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+
+        </script>
+        <script>
+            // Función para abrir el modal
+            function openModal2() {
+              document.getElementById('myModal2').style.display = 'block';
+            }
+          
+            // Función para cerrar el modal
+            function closeModal2() {
+              document.getElementById('myModal2').style.display = 'none';
+            }
+          
+            // Cierra el modal si el usuario hace clic fuera de él
+            window.onclick = function (event) {
+              var modal = document.getElementById('myModal2');
+              if (event.target == modal) {
+                modal.style.display = 'none';
+              }
+            }
+          </script>
 
 </body>
 
